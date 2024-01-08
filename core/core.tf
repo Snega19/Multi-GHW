@@ -43,7 +43,7 @@ resource "aws_subnet" "core-subnet" {
   }
 }
 
-# Core Internet Gateway
+# Core Internet Gateway.
 resource "aws_internet_gateway" "Core-igw" {
   vpc_id = aws_vpc.Core-vpc.id
 
