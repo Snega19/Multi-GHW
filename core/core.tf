@@ -27,7 +27,7 @@ resource "aws_vpc" "Core-vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "Core-vpc12"
+    Name = "Core-vpc123"
   }
 }
 
@@ -66,7 +66,7 @@ resource "aws_route_table" "core_igw_rt" {
   }
 }
 
-# Subnet association for Core
+# Subnet association for Core....
 resource "aws_route_table_association" "Core-sa" {
   subnet_id      = aws_subnet.core-subnet.id
   route_table_id = aws_route_table.core_igw_rt.id
